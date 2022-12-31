@@ -1,6 +1,6 @@
 - name: Create a jenkins job using the username and password
   community.general.jenkins_job:
-    config: "{{ lookup('template', 'templates/main.xml') }}"
+    config: "{{ lookup('template', 'templates/pipe.xml.j2') }}"
     name: Srinivas
     url: http://jenkins.devops65.online:8080
     user: admin
