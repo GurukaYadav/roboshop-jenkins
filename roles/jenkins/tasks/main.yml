@@ -6,4 +6,4 @@
     user: admin
     password: Jenkins
   loop:
-    - { componentName: "cart" , repoName: "roboshop-jenkins" }
+    - {componentName: "cart" , repoName: "cart" }
