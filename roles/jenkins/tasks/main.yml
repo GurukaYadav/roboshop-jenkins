@@ -5,3 +5,5 @@
     url: http://jenkins.devops65.online:8080
     user: admin
     password: Jenkins
+  loop:
+    - { componentName: "cart" , repoName: "roboshop-jenkins" }
