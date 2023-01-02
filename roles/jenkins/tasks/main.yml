@@ -6,7 +6,7 @@
     url: "http://jenkins.devops65.online:8080"
     user: "admin"
   loop:
-    - { componentName: "cart", repoName: "cart" }
+    - {componentName: "cart", repoName: "cart"}
 
 
 
