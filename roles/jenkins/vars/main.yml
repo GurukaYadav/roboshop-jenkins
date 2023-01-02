@@ -3,5 +3,11 @@ folder:
 
 pipelineJobs:
   - { folderName: "CI-pipeline-jobs/", jobName: "cart", componentName: "cart", repoName: "cart" }
+  - { folderName: "CI-pipeline-jobs/", jobName: "catalogue", componentName: "catalogue", repoName: "catalogue" }
+  - { folderName: "CI-pipeline-jobs/", jobName: "user", componentName: "user", repoName: "user" }
+  - { folderName: "CI-pipeline-jobs/", jobName: "frontend", componentName: "frontend", repoName: "frontend" }
+  - { folderName: "CI-pipeline-jobs/", jobName: "payment", componentName: "payment", repoName: "payment" }
+  - { folderName: "CI-pipeline-jobs/", jobName: "shipping", componentName: "shipping", repoName: "shipping" }
+
 
 
