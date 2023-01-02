@@ -1,5 +1,5 @@
 folder:
-  - { folderName: "CI-pipeline-jobs", description: "This is a folder for CI-pipeline jobs" }
+  - { name: "CI-pipeline-jobs", description: "This is a folder for CI-pipeline jobs" }
 
 pipelineJobs:
   - { folderName: "CI-pipeline-jobs/", jobName: "cart", componentName: "cart", repoName: "cart" }
