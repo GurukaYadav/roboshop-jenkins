@@ -1,12 +1,12 @@
 - name: Create a jenkins job using the token
   community.general.jenkins_job:
-    config: "{{ lookup('template', 'template/pipe.xml') }}"
+    config: "{{ lookup('template', 'templates/pipe.xml') }}"
     name: "avinash"
     token: "11c8db34e2bf8e52a29005cc703403744e"
     url: "http://jenkins.devops65.online:8080"
     user: "admin"
   loop:
-    - {componentName: "cart", repoName: "cart"}
+    - { componentName: "cart", repoName: "cart" }
 
 
 
