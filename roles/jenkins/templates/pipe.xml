@@ -13,7 +13,7 @@
 <printPostContent>false</printPostContent>
 <printContributedVariables>false</printContributedVariables>
 <causeString>Generic Cause</causeString>
-<token>{{componentName}}</token>
+<token>{{item.componentName}}</token>
 <tokenCredentialId></tokenCredentialId>
 <silentResponse>false</silentResponse>
 <overrideQuietPeriod>false</overrideQuietPeriod>
@@ -28,7 +28,7 @@
 <configVersion>2</configVersion>
 <userRemoteConfigs>
 <hudson.plugins.git.UserRemoteConfig>
-<url>https://github.com/GurukaYadav/{{repoName}}.git</url>
+<url>https://github.com/GurukaYadav/{{item.repoName}}.git</url>
 </hudson.plugins.git.UserRemoteConfig>
 </userRemoteConfigs>
 <branches>
