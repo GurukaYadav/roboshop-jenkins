@@ -2,7 +2,7 @@
   community.general.jenkins_job:
     config: "{{ lookup('template', 'folder.xml') }}"
     name: "{{item.name}}"
-    token: 11c8db34e2bf8e52a29005cc703403744e
+    token: 113d48cab5b9336bc3a1fe9de40d67323c
     url: http://jenkins.devops65.online:8080
     user: admin
   loop: "{{folder}}"
@@ -12,7 +12,7 @@
   community.general.jenkins_job:
     config: "{{ lookup('template', 'pipe.xml') }}"
     name: "{{item.folderName}}{{item.jobName}}"
-    token: 11c8db34e2bf8e52a29005cc703403744e
+    token: 113d48cab5b9336bc3a1fe9de40d67323c
     url: http://jenkins.devops65.online:8080
     user: admin
   loop: "{{pipelineJobs}}"
