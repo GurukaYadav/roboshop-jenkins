@@ -8,7 +8,7 @@ multibranchJobs:
   - { folderName: "CI-pipeline-jobs/", jobName: "frontend", componentName: "frontend", repoName: "frontend" }
   - { folderName: "CI-pipeline-jobs/", jobName: "payment", componentName: "payment", repoName: "payment" }
   - { folderName: "CI-pipeline-jobs/", jobName: "shipping", componentName: "shipping", repoName: "shipping" }
-  - { folderName: "CI-pipeline-jobs/", jobName: "dispatch", componentName: "dispatch", repoName: "dispatch" }
+  - { folderName: "CI-pipeline-jobs/", jobName: "dispatch", componentName: "dispatch", repoName: "dispatch " }
 
 
 
