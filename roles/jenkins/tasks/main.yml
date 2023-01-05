@@ -2,7 +2,7 @@
   community.general.jenkins_job:
     config: "{{ lookup('template', 'folder.xml') }}"
     name: "{{item.name}}"
-    token: 1110661bdb32d855198e65175e332fb246
+    token: 11a05db14ff24768f305ace82599220842
     url: http://jenkins.devops65.online:8080
     user: admin
   loop: "{{folder}}"
@@ -11,7 +11,7 @@
   community.general.jenkins_job:
     config: "{{ lookup('template', 'multibranch.xml') }}"
     name: "{{item.folderName}}{{item.jobName}}"
-    token: 1110661bdb32d855198e65175e332fb246
+    token: 11a05db14ff24768f305ace82599220842
     url: http://jenkins.devops65.online:8080
     user: admin
   loop: "{{multibranchJobs}}"
