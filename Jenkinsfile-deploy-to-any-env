@@ -1,0 +1,24 @@
+pipeline {
+
+  agent any
+
+  environment {
+    SSH=credentials('SSH')
+  }
+
+  stages
+    stage('clone the repo') {
+      steps {
+       sh '''
+       git branch: 'main', url: 'https://github.com/GurukaYadav/roboshop-ansible.git'
+       '''
+      }
+    }
+
+    stage('Deploy to env') {
+      steps {
+        sh "ansible-playbook -i ${COMPONENT}-${ENV}.roboshop.internal roboshop.yml -e ansible_user=${SSH_USR} -e ansible_password=${SSH_PSW} -e HOST= ${COMPONENT}-${ENV}.roboshop.internal -e ROLE= ${COMPONENT} -e ENV=${ENV} -e APP_VERSION=${APP_VERSION}
+      }
+    }
+
+}
