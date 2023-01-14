@@ -15,8 +15,7 @@ pipeline {
   stages {
     stage('clone the repo') {
       steps {
-       sh
-       git branch: 'main', url: 'https://github.com/GurukaYadav/roboshop-ansible.git'
+        git branch: 'main', url: 'https://github.com/GurukaYadav/roboshop-ansible.git' 
       }
     }
 
