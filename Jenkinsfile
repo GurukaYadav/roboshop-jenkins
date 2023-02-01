@@ -10,7 +10,6 @@ pipeline {
         sh 'ansible-playbook create-jobs.yml'
       }
     }
-
   }
 
 }
