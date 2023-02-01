@@ -1,30 +1,30 @@
-#- name: Create a folder in jenkins
-#  community.general.jenkins_job:
-#    config: "{{ lookup('template', 'folder.xml') }}"
-#    name: "{{item.name}}"
-#    token: 11cd8de5be4ce8f0cd478235fcafa81162
-#    url: http://jenkins.devops65.online:8080
-#    user: admin
-#  loop: "{{folder}}"
-#
-#- name: Create a jenkins multibranch pipeline job using the token
-#  community.general.jenkins_job:
-#    config: "{{ lookup('template', 'multibranch.xml') }}"
-#    name: "{{item.folderName}}{{item.jobName}}"
-#    token: 11cd8de5be4ce8f0cd478235fcafa81162
-#    url: http://jenkins.devops65.online:8080
-#    user: admin
-#  loop: "{{multibranchJobs}}"
-
-
-- name: Create a jenkins single pipeline job using the token
+- name: Create a folder in jenkins
   community.general.jenkins_job:
-    config: "{{ lookup('template', 'pipe1.xml') }}"
-    name: "{{item.folderName}}{{item.jobName}}"
-    token: 11cd8de5be4ce8f0cd478235fcafa81162
+    config: "{{ lookup('template', 'folder.xml') }}"
+    name: "{{item.name}}"
+    token: 1146e174da68221377b5d2c89906acba8d
     url: http://jenkins.devops65.online:8080
     user: admin
-  loop: "{{pipelineJobs}}"
+  loop: "{{folder}}"
+
+- name: Create a jenkins multibranch pipeline job using the token
+  community.general.jenkins_job:
+    config: "{{ lookup('template', 'multibranch.xml') }}"
+    name: "{{item.folderName}}{{item.jobName}}"
+    token: 1146e174da68221377b5d2c89906acba8d
+    url: http://jenkins.devops65.online:8080
+    user: admin
+  loop: "{{multibranchJobs}}"
+
+
+#- name: Create a jenkins single pipeline job using the token
+#  community.general.jenkins_job:
+#    config: "{{ lookup('template', 'pipe1.xml') }}"
+#    name: "{{item.folderName}}{{item.jobName}}"
+#    token: 1146e174da68221377b5d2c89906acba8d
+#    url: http://jenkins.devops65.online:8080
+#    user: admin
+#  loop: "{{pipelineJobs}}"
 
 
 
