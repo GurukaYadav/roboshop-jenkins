@@ -1,6 +1,8 @@
 pipeline {
   agent any
-  ansiColor('xterm') {
+  options {
+    ansiColor('xterm')
+  }
   stages {
     stage('create a job') {
       steps {
@@ -8,6 +10,4 @@ pipeline {
       }
     }
   }
-  }
 }
-
