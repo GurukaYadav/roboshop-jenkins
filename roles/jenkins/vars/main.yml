@@ -12,6 +12,9 @@ multibranchJobs:
 
 pipelineJobs:
   - { folderName: "", jobName: "deploy-to-any-env", repoName: "roboshop-jenkins", fileName: "Jenkinsfile-deploy-to-any-env" }
+  - { folderName: "", jobName: "terraform-mutable", repoName: "terraform-roboshop-mutable", fileName: "Jenkinsfile" }
+
+
 
 
 
