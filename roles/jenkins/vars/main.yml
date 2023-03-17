@@ -11,8 +11,11 @@ multibranchJobs:
   - { folderName: "CI-pipeline-jobs/", jobName: "dispatch", componentName: "dispatch", repoName: "dispatch " }
 
 pipelineJobs:
-  - { folderName: "", jobName: "deploy-to-any-env", repoName: "roboshop-jenkins", fileName: "Jenkinsfile-deploy-to-any-env" }
+#  - { folderName: "", jobName: "deploy-to-any-env", repoName: "roboshop-jenkins", fileName: "Jenkinsfile-deploy-to-any-env" }
 #  - { folderName: "", jobName: "terraform-mutable", repoName: "terraform-roboshop-mutable", fileName: "Jenkinsfile" }
+  - { folderName: "", jobName: "terraform-mutable-deployment", repoName: "
+terraform-mutable-deployment", fileName: "Jenkinsfile" }
+
 
 
 
